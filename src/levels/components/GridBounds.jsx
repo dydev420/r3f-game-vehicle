@@ -38,13 +38,13 @@ export function BlockEnd({ position = [0, 0, 0] }) {
     <group position={position}>
       {/* Finish Text */}
       <Text
-          font="./bebas-neue-v9-latin-regular.woff"
-          scale={1}
-          position={[0, 2.2, 2]}
-        >
-          FINISH
-          <meshBasicMaterial toneMapped={false} />
-        </Text>
+        font="./bebas-neue-v9-latin-regular.woff"
+        scale={1}
+        position={[0, 2.2, 2]}
+      >
+        FINISH
+        <meshBasicMaterial toneMapped={false} />
+      </Text>
 
       {/* Floor */}
       <mesh

@@ -119,8 +119,8 @@ const useWheelRay = ({
       const ray = new rapier.Ray(origin, direction);
       const hit = world.castRay(ray, 10, true, null, interactionGroups(0,0));
   
-      if(hit && hit?.toi < maxSpringLength) {
-        handleSpringRayHit(index, delta, hit.toi, direction, origin);
+      if(hit && hit?.timeOfImpact < maxSpringLength) {
+        handleSpringRayHit(index, delta, hit.timeOfImpact, direction, origin);
       } else {
         handleNoSpringRayHit(index, delta, direction, origin);
       }
