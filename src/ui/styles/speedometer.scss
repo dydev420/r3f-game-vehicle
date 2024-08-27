@@ -1,0 +1,77 @@
+.speedometer-container {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 5%;
+  right: 5%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: #7b0828;
+  background-color: transparent;
+
+
+  .speedometer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    outline: 2px solid #ffeeee;
+    background: #ffffff66;
+    color: #ffffff;
+
+    svg {
+      height: 100%;
+      width: 100%;
+
+      .text-speed {
+        // fill: #aaaaff;
+        fill: #7b0828;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-anchor: end;
+        pointer-events: auto;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      
+      .ticks {
+        fill: transparent;
+        stroke-width: 7;
+        stroke-dashoffset: 0.1;
+        
+        &-minute {
+          stroke: #0f0e0e;
+          stroke-dasharray: 0.2 0.8;
+        }
+        &-hour {
+          stroke: #aaaaff;
+          stroke-dasharray: 0.2 4.8;
+        }
+      }
+
+      .needle {
+        stroke: #ffffff;
+        stroke-width: 2;
+        stroke-linecap: round;
+
+        &-thick {
+          stroke-width: 7;
+        }
+
+        &-second {
+          stroke: #7b0828;
+        }
+      }
+
+      .center-dot {
+        fill: #7b0828;
+        stroke-width: 2;
+        stroke: #ffffff;
+      }
+    }
+  }
+}

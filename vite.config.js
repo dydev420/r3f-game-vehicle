@@ -1,10 +1,16 @@
 import react from '@vitejs/plugin-react'
 import { transformWithEsbuild } from 'vite'
+import path from 'path';
 
 export default {
     root: 'src/',
     publicDir: '../public/',
     base: './',
+    resolve: {
+        alias: {
+        'src': path.resolve(__dirname, './src'),
+      },
+    },
     plugins:
     [
         // React support

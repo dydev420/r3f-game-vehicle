@@ -10,9 +10,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.1",
+    "sass": "^1.77.8",
     "vite": "^4.5.0"
   },
   "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.88.7",
     "@react-three/fiber": "^8.15.8",
     "@react-three/rapier": "^1.2.0",

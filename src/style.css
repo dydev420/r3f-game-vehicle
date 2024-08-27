@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body,
 #root
@@ -8,6 +12,8 @@ body,
     width: 100%;
     height: 100%;
     background: ivory;
+    margin: 0;
+    padding: 0;
 }
 
 /**
@@ -92,4 +98,94 @@ body,
 .controls .key.active
 {
     background: #ffffff99;
+}
+
+/**
+ * GridOptions
+ */
+.grid-options
+{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.grid-options .card-stack
+{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 144px;
+    padding: 8px;
+    background: #ffffff44;
+    transform-origin: bottom center;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.grid-options .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    margin: 0px 4px;
+    outline: 2px solid #ffeeee;
+    background: #ffffff66;
+
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.controller-options
+{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 20%;
+    display: block;
+}
+
+.controller-options .gamepad-wrapper
+{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 150px;
+    padding: 8px;
+    background: #ffffff44;
+    transform-origin: bottom center;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.gamepad-wrapper .gamepad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px;
+    outline: 2px solid #ffeeee;
+    background: #ffffff66;
+
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.gamepad svg {
+    /* display: block; */
+    height: 100%;
+}
+
+.gamepad .selected-button {
+    /* fill: blue; */
+    fill: #ffeeee;
 }
